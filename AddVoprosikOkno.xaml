@@ -1,0 +1,76 @@
+﻿<Window x:Class="Testiki.AddVoprosikOkno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Testiki"
+        mc:Ignorable="d"
+        Title="AddVoprosikOkno" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Заполните поля для добавления вопроса в тест" FontSize="18" VerticalAlignment="Center" Grid.Column="1"/>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Введите вопрос" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="VoprosTbox" Grid.Row="1"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Введите описание" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="OpisonieTBox" Grid.Row="1"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Введите первый ответ" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="FirstTbox" Grid.Row="1"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Введите второй ответ" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="SecondTBox" Grid.Row="1"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Введите третий ответ" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="ThirdTbox" Grid.Row="1"/>
+        </Grid>
+        <Grid Grid.Row="6" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Введите правильный ответ" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <ComboBox x:Name="CorrectCB" Grid.Row="1"/>
+        </Grid>
+        <Button x:Name="ZaverchBtm" Content="Добавить" Grid.Column="1" Grid.Row="7" Click="ZaverchBtm_Click"/>
+    </Grid>
+</Window>

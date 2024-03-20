@@ -1,0 +1,22 @@
+﻿<Window x:Class="Testiki.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Testiki"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="299" Cursor="Hand">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Пройти или изменить тест??" TextAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+        <Button x:Name="ProityBtm" Content="Пройти тест" Grid.Row="1" Click="ProityBtm_Click"/>
+        <Button x:Name="RedactirovatBtm" Content="Редактировать тест" Grid.Row="2" Click="RedactirovatBtm_Click"/>
+        <TextBox x:Name="AvtorizTbox" IsEnabled="False" Grid.Row="3" VerticalAlignment="Center" TextAlignment="Center" TextChanged="AvtorizTbox_TextChanged"/>
+    </Grid>
+</Window>
